@@ -25,7 +25,19 @@ export default function Navbar() {
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
       <Logo />
-      <nav>
+      <div>
+        <h1 className='text-slate-400'>
+          <span className='bg-purple-800 text-white px-2 py-1 rounded-full text-xl'>
+            D
+          </span>
+          oran{' '}
+          <span className='bg-purple-800 text-white px-2.5 py-1 rounded-full text-xl'>
+            S
+          </span>
+          oftware
+        </h1>
+      </div>
+      <nav className='hidden lg:flex'>
         <CustomLink href='/' title='Home' className='mr-4' />
         <CustomLink href='/about' title='About' className='mx-4' />
         <CustomLink href='/projects' title='Projects' className='mx-4' />
