@@ -4,6 +4,9 @@ import Image from 'next/image';
 import profilePic from '../../public/images/profile/developer-pic-1.png';
 import AnimatedText from '@/components/global/AnimatedText';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { LinkArrow } from '../components/global/Icons';
+import HireMe from '@/components/HireMe';
 
 const paragraphVariant = {
   initial: {
@@ -56,9 +59,30 @@ export default function HomePage() {
                 projects and articles, showcasing my expertise in building
                 inspiring business solutions.
               </motion.p>
+              <div className='flex items-center self-start mt-4 space-x-8'>
+                <Link
+                  href='/dummy.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  download={true}
+                  className='flex items-center gap-2 bg-purple-900 text-light p-2.5 px-6 rounded-lg text-lg font-semibold tracking-wide transition duration-200 hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
+                >
+                  Resume
+                  <LinkArrow />
+                </Link>
+                <Link
+                  href='mailto:jerry-doran@hotmail.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className=' text-lg font-medium tracking-wide underline '
+                >
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         </Layout>
+        <HireMe />
       </main>
     </>
   );
