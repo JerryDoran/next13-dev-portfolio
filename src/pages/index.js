@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
 import profilePic from '../../public/images/profile/developer-pic-1.png';
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import AnimatedText from '@/components/global/AnimatedText';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -19,6 +20,21 @@ const paragraphVariant = {
     transition: {
       duration: 1,
       delay: 1,
+    },
+  },
+};
+
+const buttonVariant = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      delay: 1.5,
     },
   },
 };
@@ -59,7 +75,12 @@ export default function HomePage() {
                 projects and articles, showcasing my expertise in building
                 inspiring business solutions.
               </motion.p>
-              <div className='flex items-center self-start mt-4 space-x-8'>
+              <motion.div
+                variants={buttonVariant}
+                initial='initial'
+                animate='animate'
+                className='flex items-center self-start mt-4 space-x-8'
+              >
                 <Link
                   href='/dummy.pdf'
                   target='_blank'
@@ -78,11 +99,14 @@ export default function HomePage() {
                 >
                   Contact
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </div>
         </Layout>
         <HireMe />
+        <div className='absolute right-8 bottom-8 inline-block'>
+          <Image src={lightBulb} alt='doran software' className='w-24' />
+        </div>
       </main>
     </>
   );
