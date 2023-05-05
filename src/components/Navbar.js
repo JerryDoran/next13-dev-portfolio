@@ -27,11 +27,11 @@ export default function Navbar() {
       <Logo />
       <div>
         <h1 className='text-slate-400'>
-          <span className='bg-purple-900 text-white px-2 py-1 rounded-full text-xl'>
+          <span className='bg-purple-800 text-white px-2 py-1 rounded-full text-xl'>
             D
           </span>
           oran{' '}
-          <span className='bg-purple-900 text-white px-2.5 py-1 rounded-full text-xl'>
+          <span className='bg-purple-800 text-white px-2.5 py-1 rounded-full text-xl'>
             S
           </span>
           oftware
