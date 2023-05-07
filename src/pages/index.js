@@ -49,7 +49,7 @@ export default function HomePage() {
           content="Jerry Doran's software developer portfolio"
         />
       </Head>
-      <main className='flex items-center text-dark w-full m-h-screen'>
+      <main className='relative flex items-center text-dark w-full m-h-screen dark:text-light'>
         <Layout className='pt-0'>
           <div className='flex items-center justify-between w-full'>
             <div className='w-1/2'>
@@ -104,7 +104,7 @@ export default function HomePage() {
           </div>
         </Layout>
         <HireMe />
-        <div className='absolute right-8 bottom-8 inline-block'>
+        <div className='absolute right-20 bottom-[150px] inline-block'>
           <Image src={lightBulb} alt='doran software' className='w-24' />
         </div>
       </main>

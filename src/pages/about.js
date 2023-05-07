@@ -44,10 +44,10 @@ export default function AboutPage() {
           <AnimatedText text='Passion Fuels Purpose!' className='mb-16' />
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-3 flex flex-col items-start justify-start'>
-              <h2 className='mb-2 text-lg font-bold uppercase text-dark/75'>
+              <h2 className='mb-2 text-lg font-bold uppercase text-dark/75 dark:text-light'>
                 About Me
               </h2>
-              <p className='font-medium text-gray-500'>
+              <p className='font-medium text-gray-500 dark:text-light'>
                 I am a self motivated and self driven software engineer with a
                 passion for creating software solutions from ideas and
                 perspective of others. I am constantly learning new skills and
@@ -57,7 +57,7 @@ export default function AboutPage() {
                 specialized in web development to become a full stack software
                 developer.
               </p>
-              <p className='font-medium text-gray-500 mt-4'>
+              <p className='font-medium text-gray-500 dark:text-light mt-4'>
                 Whether I am working on a website, mobile app, or other digital
                 product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
@@ -65,8 +65,8 @@ export default function AboutPage() {
                 your next project.
               </p>
             </div>
-            <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
-              <div className='absolute top-0.5 -right-3 -z-10 w-[102%] h-[103%] rounded-[1.2rem] bg-dark' />
+            <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-light p-6 dark:bg-light/80 dark:border-transparent'>
+              {/* <div className='absolute top-[1px] -right-2.5 -z-10 w-[101%] h-[102%] rounded-[1.2rem] bg-dark' /> */}
               <Image
                 src={about}
                 alt='doran software'
@@ -75,26 +75,26 @@ export default function AboutPage() {
             </div>
             <div className='col-span-2 flex flex-col items-end justify-between'>
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold'>
+                <span className='inline-block text-7xl font-bold dark:text-light'>
                   <AnimatedNumbers value={25} />+
                 </span>
-                <h2 className='text-2xl font-medium capitalize text-dark/75'>
+                <h2 className='text-2xl font-medium capitalize text-dark/75 dark:text-light/70'>
                   years of software experience
                 </h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold'>
+                <span className='inline-block text-7xl font-bold dark:text-light'>
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className='text-2xl font-medium capitalize text-dark/75'>
+                <h2 className='text-2xl font-medium capitalize text-dark/75 dark:text-light/70'>
                   projects completed
                 </h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold'>
+                <span className='inline-block text-7xl font-bold dark:text-light'>
                   <AnimatedNumbers value={5} />+
                 </span>
-                <h2 className='text-2xl font-medium capitalize text-dark/75'>
+                <h2 className='text-2xl font-medium capitalize text-dark/75 dark:text-light/70'>
                   years of web and mobile development
                 </h2>
               </div>

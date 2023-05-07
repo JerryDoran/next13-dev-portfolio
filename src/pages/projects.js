@@ -13,7 +13,7 @@ const FramerImage = motion(Image);
 function FeaturedProject({ type, title, summary, img, link, githubLink }) {
   console.log(link);
   return (
-    <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-neutral-200 bg-light shadow-2xl p-12'>
+    <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-neutral-200 bg-light shadow-2xl p-12 dark:bg-dark dark:border-light/40 dark:shadow-neutral-600'>
       <Link
         href={link}
         target='_blank'
@@ -28,13 +28,15 @@ function FeaturedProject({ type, title, summary, img, link, githubLink }) {
         />
       </Link>
       <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
-        <span className='font-medium text-xl'>{type}</span>
+        <span className='font-medium text-xl dark:text-light'>{type}</span>
         <Link href={link} target='_blank' className=''>
           <h2 className='m-2 w-full text-left text-4xl font-bold text-purple-800 transition duration-200 hover:text-purple-700 '>
             {title}
           </h2>
         </Link>
-        <p className='my-2 font-medium text-neutral-500'>{summary}</p>
+        <p className='my-2 font-medium text-neutral-500 dark:text-light'>
+          {summary}
+        </p>
         <div className='mt-2 flex items-center'>
           <Link
             href={githubLink}
@@ -56,9 +58,9 @@ function FeaturedProject({ type, title, summary, img, link, githubLink }) {
   );
 }
 
-function Project({ type, title, img, link, githubLink }) {
+function Project({ title, img, link, githubLink }) {
   return (
-    <article className='w-full flex flex-col items-center justify-center rounded-3xl border border-solid border-neutral-200 bg-light shadow-2xl p-12 relative'>
+    <article className='w-full flex flex-col items-center justify-center rounded-3xl border border-solid border-neutral-200 bg-light shadow-2xl p-12 relative dark:bg-dark dark:border-light/40 dark:shadow-neutral-600'>
       <Link
         href={link}
         target='_blank'
@@ -73,7 +75,6 @@ function Project({ type, title, img, link, githubLink }) {
         />
       </Link>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
-        <span className='font-medium text-xl'>{type}</span>
         <Link href={link} target='_blank' className=''>
           <h2 className='m-2 w-full text-left text-3xl font-bold text-purple-800 transition duration-200 hover:text-purple-700 '>
             {title}
@@ -108,7 +109,7 @@ export default function ProjectsPage() {
         <title>Doran Software | Projects Page</title>
         <meta name='description' content='Jerry Doran software projects' />
       </Head>
-      <main className='w-full mb-16 flex flex-col items-center justify-center'>
+      <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
           <AnimatedText text='Imagination Meets Knowledge!' className='mb-16' />
           <div className='grid grid-cols-12 gap-24'>

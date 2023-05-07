@@ -114,7 +114,7 @@ export const SunIcon = ({ className, ...rest }) => (
           <animate
             fill='freeze'
             attributeName='stroke-dashoffset'
-            dur='0.2s'
+            dur='0.05s'
             values='4;2'
           />
         </path>
@@ -294,7 +294,7 @@ export const MoonIcon = ({ className, ...rest }) => (
           fill='freeze'
           attributeName='d'
           begin='1.2s'
-          dur='0.2s'
+          dur='0.05s'
           values='M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1'
         />
         <animate
