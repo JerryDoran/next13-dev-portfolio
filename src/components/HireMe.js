@@ -11,7 +11,7 @@ export default function HireMe() {
           href='mailto:jerry-doran@hotmail.com'
           target='_blank'
           rel='noopener noreferrer'
-          className='flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-purple-900 text-light shadow-md border border-solid border-purple-900 w-20 h-20 rounded-full font-semibold transition duration-200 hover:bg-purple-800'
+          className='flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-violet-900 text-light shadow-md border border-solid border-violet-900 w-20 h-20 rounded-full font-semibold transition duration-200 hover:bg-violet-800'
         >
           Hire Me
         </Link>

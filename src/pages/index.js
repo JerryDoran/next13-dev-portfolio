@@ -86,7 +86,7 @@ export default function HomePage() {
                   target='_blank'
                   rel='noopener noreferrer'
                   download={true}
-                  className='flex items-center gap-2 bg-purple-900 text-light p-2.5 px-6 rounded-lg text-lg font-semibold tracking-wide transition duration-200 hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
+                  className='flex items-center gap-2 bg-violet-900 text-light p-2.5 px-6 rounded-lg text-lg font-semibold tracking-wide transition duration-200 hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
                 >
                   Resume
                   <LinkArrow />

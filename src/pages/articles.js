@@ -33,7 +33,7 @@ function FeaturedArticle({ img, title, time, summary, link }) {
         />
       </Link>
       <Link href={link} target='_blank'>
-        <h2 className='capitalize text-xl font-bold my-2 mt-4 text-purple-700 transition duration-200 hover:text-purple-600'>
+        <h2 className='capitalize text-xl font-bold my-2 mt-4 text-violet-700 transition duration-200 hover:text-violet-600'>
           {title}
         </h2>
       </Link>
@@ -83,7 +83,7 @@ function MovingImage({ title, img, link }) {
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseLeave}
     >
-      <h2 className='w-[90%] capitalize text-xl font-bold my-2 mt-4 text-purple-700 transition duration-200 hover:text-purple-600'>
+      <h2 className='w-[90%] capitalize text-xl font-bold my-2 mt-4 text-violet-700 transition duration-200 hover:text-violet-600'>
         {title}
       </h2>
       <FramerImage

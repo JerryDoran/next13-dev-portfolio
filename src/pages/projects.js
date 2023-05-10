@@ -30,7 +30,7 @@ function FeaturedProject({ type, title, summary, img, link, githubLink }) {
       <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
         <span className='font-medium text-xl dark:text-light'>{type}</span>
         <Link href={link} target='_blank' className=''>
-          <h2 className='m-2 w-full text-left text-4xl font-bold text-purple-800 transition duration-200 hover:text-purple-700 '>
+          <h2 className='m-2 w-full text-left text-4xl font-bold text-violet-800 transition duration-200 hover:text-violet-700 '>
             {title}
           </h2>
         </Link>
@@ -41,7 +41,7 @@ function FeaturedProject({ type, title, summary, img, link, githubLink }) {
           <Link
             href={githubLink}
             target='_blank'
-            className='w-10 transition duration-200 hover:text-purple-700'
+            className='w-10 transition duration-200 hover:text-violet-700'
           >
             <GithubIcon />
           </Link>
@@ -76,7 +76,7 @@ function Project({ title, img, link, githubLink }) {
       </Link>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
         <Link href={link} target='_blank' className=''>
-          <h2 className='m-2 w-full text-left text-3xl font-bold text-purple-800 transition duration-200 hover:text-purple-700 '>
+          <h2 className='m-2 w-full text-left text-3xl font-bold text-violet-800 transition duration-200 hover:text-violet-700 '>
             {title}
           </h2>
         </Link>
@@ -85,7 +85,7 @@ function Project({ title, img, link, githubLink }) {
           <Link
             href={githubLink}
             target='_blank'
-            className='w-8 transition duration-200 hover:text-purple-700'
+            className='w-8 transition duration-200 hover:text-violet-700'
           >
             <GithubIcon />
           </Link>

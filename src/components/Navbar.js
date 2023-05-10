@@ -9,11 +9,11 @@ function CustomLink({ href, title, className = '' }) {
   return (
     <Link
       href={href}
-      className={`${className} relative group transition duration-200 hover:text-purple-800 dark:hover:text-purple-400`}
+      className={`${className} relative group transition duration-200 hover:text-violet-800 dark:hover:text-violet-400`}
     >
       {title}
       <span
-        className={`h-[2px] inline-block  bg-purple-800 dark:bg-purple-400 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-[2px] inline-block  bg-violet-800 dark:bg-violet-400 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? 'w-full' : 'w-0'
         }`}
       >
@@ -30,11 +30,11 @@ export default function Navbar() {
       <Logo />
       <div>
         <h1 className='text-slate-400'>
-          <span className='bg-purple-700 text-white px-2 py-1 rounded-full text-xl'>
+          <span className='bg-violet-700 text-white px-2 py-1 rounded-full text-xl'>
             D
           </span>
           oran{' '}
-          <span className='bg-purple-700 text-white px-2.5 py-1 rounded-full text-xl'>
+          <span className='bg-violet-700 text-white px-2.5 py-1 rounded-full text-xl'>
             S
           </span>
           oftware
