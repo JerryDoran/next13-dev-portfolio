@@ -25,6 +25,9 @@ function FeaturedProject({ type, title, summary, img, link, githubLink }) {
           className='w-full h-auto'
           whileHover={{ scale: 1.05 }}
           transition={{ duaration: 0.2 }}
+          priority
+          sizes='(max-width: 768px) 100vw,
+                      (max-width: 1200px) 50vw, 50vw'
         />
       </Link>
       <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
@@ -111,7 +114,10 @@ export default function ProjectsPage() {
       </Head>
       <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
-          <AnimatedText text='Imagination Meets Knowledge!' className='mb-16' />
+          <AnimatedText
+            text='Solutions to inspire your business!'
+            className='mb-16'
+          />
           <div className='grid grid-cols-12 gap-24'>
             <div className='col-span-12'>
               <FeaturedProject

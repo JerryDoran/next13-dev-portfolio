@@ -30,6 +30,9 @@ function FeaturedArticle({ img, title, time, summary, link }) {
           className='w-full h-auto rounded-2xl'
           whileHover={{ scale: 1.05 }}
           transition={{ duaration: 0.2 }}
+          priority
+          sizes='(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw, 50vw'
         />
       </Link>
       <Link href={link} target='_blank'>
@@ -92,6 +95,7 @@ function MovingImage({ title, img, link }) {
         src={img}
         alt={title}
         className='z-10 w-96 h-auto hidden absolute rounded-lg'
+        priority
       />
     </Link>
   );

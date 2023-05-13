@@ -7,6 +7,7 @@ import { useEffect, useRef } from 'react';
 import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
+import Services from '@/components/Services';
 
 function AnimatedNumbers({ value }) {
   const numberRef = useRef(null);
@@ -71,36 +72,40 @@ export default function AboutPage() {
                 src={about}
                 alt='doran software'
                 className='w-full h-auto rounded-2xl'
+                priority
+                sizes='(max-width: 768px) 100vw,
+                      (max-width: 1200px) 50vw, 33vw'
               />
             </div>
             <div className='col-span-2 flex flex-col items-end justify-between'>
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold dark:text-light'>
+                <span className='inline-block text-4xl font-bold dark:text-light'>
                   <AnimatedNumbers value={25} />+
                 </span>
-                <h2 className='text-2xl font-medium capitalize text-dark/75 dark:text-light/70'>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/70'>
                   years of software experience
                 </h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold dark:text-light'>
+                <span className='inline-block text-4xl font-bold dark:text-light'>
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className='text-2xl font-medium capitalize text-dark/75 dark:text-light/70'>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/70'>
                   projects completed
                 </h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold dark:text-light'>
+                <span className='inline-block text-4xl font-bold dark:text-light'>
                   <AnimatedNumbers value={5} />+
                 </span>
-                <h2 className='text-2xl font-medium capitalize text-dark/75 dark:text-light/70'>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/70'>
                   years of web and mobile development
                 </h2>
               </div>
             </div>
           </div>
           <Skills />
+          <Services />
           {/* <Experience /> */}
         </Layout>
       </main>

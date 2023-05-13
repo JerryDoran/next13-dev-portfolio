@@ -49,26 +49,29 @@ export default function HomePage() {
           content="Jerry Doran's software developer portfolio"
         />
       </Head>
-      <main className='relative flex items-center text-dark w-full m-h-screen dark:text-light'>
+      <main className='relative flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0'>
-          <div className='flex items-center justify-between w-full'>
-            <div className='w-1/2'>
+          <div className='flex items-center justify-between w-full flex-col lg:flex-row'>
+            <div className='md:w-1/2 w-full'>
               <Image
                 src={profilePic}
                 alt='doran software'
-                className='w-full h-auto'
+                className='w-full h-auto md:inline-block'
+                priority
+                sizes='(max-width: 768px) 100vw,
+                      (max-width: 1200px) 50vw, 50vw'
               />
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center'>
+            <div className='lg:w-1/2 w-full xl:w-3/4 text-center lg:text-left flex flex-col items-center self-center'>
               <AnimatedText
-                className='!text-6xl !text-left mb-4 tracking-wide'
+                className='!text-3xl sm:!text-5xl md:!text-6xl !text-center lg:!text-left lg:!text-5xl xl:!text-6xl mb-4 tracking-wide'
                 text='Turning Vision Into Reality With Code And Design.'
               />
               <motion.p
                 variants={paragraphVariant}
                 initial='initial'
                 animate='animate'
-                className='leading-6'
+                className='leading-6 mb-4'
               >
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
@@ -79,14 +82,14 @@ export default function HomePage() {
                 variants={buttonVariant}
                 initial='initial'
                 animate='animate'
-                className='flex items-center self-start mt-4 space-x-8'
+                className='flex items-center lg:self-start mt-4 space-x-8 self-center'
               >
                 <Link
                   href='/dummy.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   download={true}
-                  className='flex items-center gap-2 bg-violet-900 text-light p-2.5 px-6 rounded-lg text-lg font-semibold tracking-wide transition duration-200 hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
+                  className='flex items-center gap-2 bg-violet-900 text-light p-2.5 px-6 rounded-lg text-lg font-semibold tracking-wide transition duration-200 hover:bg-violet-800 '
                 >
                   Resume
                   <LinkArrow />
@@ -95,7 +98,7 @@ export default function HomePage() {
                   href='mailto:jerry-doran@hotmail.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className=' text-lg font-medium tracking-wide underline '
+                  className=' text-lg font-medium tracking-wide underline transition duration-200 dark:hover:text-violet-500 hover:text-violet-700'
                 >
                   Contact
                 </Link>
@@ -104,7 +107,7 @@ export default function HomePage() {
           </div>
         </Layout>
         <HireMe />
-        <div className='absolute right-20 bottom-[150px] inline-block'>
+        <div className='absolute right-20 bottom-[150px] hidden lg:inline-block'>
           <Image src={lightBulb} alt='doran software' className='w-24' />
         </div>
       </main>

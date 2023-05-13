@@ -9,16 +9,11 @@ export default function Logo() {
     <div className='flex items-center justify-center'>
       <motion.div whileHover={{ scale: 1.1 }}>
         <Link href='/'>
-          <Image
-            src='/images/ds-logo.png'
-            alt='logo'
-            width={150}
-            height={150}
-          />
+          <Image src='/images/ds-logo.png' alt='logo' width={60} height={60} />
         </Link>
       </motion.div>
 
-      <p className='text-sm -ml-6'>Solutions to inspire your business</p>
+      <p className='lg:text-lg ml-3'>Doran Sofware</p>
     </div>
   );
 }
