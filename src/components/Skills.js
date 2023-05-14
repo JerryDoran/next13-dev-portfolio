@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 function Skill({ name, x, y }) {
   return (
     <motion.div
-      className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-2 shadow-dark cursor-pointer absolute dark:text-dark dark:bg-light'
+      className='flex items-center justify-center rounded-full font-semibold text-light bg-dark text-dark p-1.5 px-2 shadow-dark cursor-pointer absolute md:dark:text-dark md:dark:bg-light text-sm bg-transparent dark:bg-transparent'
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
@@ -17,12 +17,12 @@ function Skill({ name, x, y }) {
 export default function Skills() {
   return (
     <>
-      <h2 className='font-bold text-6xl mt-40 w-full text-center dark:text-light'>
+      <h2 className='font-bold text-6xl mt-32 w-full text-center dark:text-light'>
         Skills
       </h2>
       <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark'>
         <motion.div
-          className='flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light'
+          className='flex items-center justify-center rounded-full font-semibold bg-dark text-light md:px-6 md:py-7 px-4 py-5 shadow-dark cursor-pointer dark:text-dark dark:bg-light text-xs md:text-base'
           whileHover={{ scale: 1.05 }}
         >
           Web

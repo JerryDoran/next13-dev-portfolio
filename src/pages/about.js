@@ -42,9 +42,12 @@ export default function AboutPage() {
       </Head>
       <main className='flex w-full flex-col items-center justify-center'>
         <Layout className='pt-16'>
-          <AnimatedText text='Passion Fuels Purpose!' className='mb-16' />
-          <div className='grid w-full grid-cols-8 gap-16'>
-            <div className='col-span-3 flex flex-col items-start justify-start'>
+          <AnimatedText
+            text='Passion Fuels Purpose!'
+            className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl'
+          />
+          <div className='grid w-full grid-cols-8 sm:gap-16 gap-8'>
+            <div className='xl:col-span-3 md:col-span-4 col-span-8 flex flex-col items-start justify-start order-2 lg:order-none'>
               <h2 className='mb-2 text-lg font-bold uppercase text-dark/75 dark:text-light'>
                 About Me
               </h2>
@@ -66,7 +69,7 @@ export default function AboutPage() {
                 your next project.
               </p>
             </div>
-            <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-light p-6 dark:bg-light/80 dark:border-transparent'>
+            <div className='xl:col-span-3 md:col-span-4 col-span-8 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-light p-6 dark:bg-light/80 dark:border-transparent order-1 lg:order-none'>
               {/* <div className='absolute top-[1px] -right-2.5 -z-10 w-[101%] h-[102%] rounded-[1.2rem] bg-dark' /> */}
               <Image
                 src={about}
@@ -77,29 +80,29 @@ export default function AboutPage() {
                       (max-width: 1200px) 50vw, 33vw'
               />
             </div>
-            <div className='col-span-2 flex flex-col items-end justify-between'>
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-4xl font-bold dark:text-light'>
+            <div className='xl:col-span-2 col-span-8 flex xl:flex-col flex-row justify-between order-3'>
+              <div className='flex flex-col justify-center xl:items-end items-center'>
+                <span className='inline-block text-3xl sm:text-5xl font-bold dark:text-light'>
                   <AnimatedNumbers value={25} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/70'>
-                  years of software experience
+                <h2 className='md:text-xl text-sm xs:text-base sm:text-lg text-center font-medium capitalize text-dark/75 dark:text-light/70'>
+                  years of experience
                 </h2>
               </div>
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-4xl font-bold dark:text-light'>
+              <div className='flex flex-col justify-center xl:items-end items-center'>
+                <span className='inline-block text-3xl sm:text-5xl font-bold dark:text-light'>
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/70'>
+                <h2 className='md:text-xl text-sm xs:text-base sm:text-lg text-center font-medium capitalize text-dark/75 dark:text-light/70'>
                   projects completed
                 </h2>
               </div>
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-4xl font-bold dark:text-light'>
+              <div className='flex flex-col justify-center xl:items-end items-center'>
+                <span className='inline-block text-3xl sm:text-5xl font-bold dark:text-light'>
                   <AnimatedNumbers value={5} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/70'>
-                  years of web and mobile development
+                <h2 className='md:text-xl text-sm xs:text-base sm:text-lg text-center font-medium capitalize text-dark/75 dark:text-light/70'>
+                  years of web / mobile
                 </h2>
               </div>
             </div>

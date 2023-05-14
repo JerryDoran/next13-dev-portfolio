@@ -50,7 +50,7 @@ export default function HomePage() {
         />
       </Head>
       <main className='relative flex items-center text-dark w-full min-h-screen dark:text-light'>
-        <Layout className='pt-0'>
+        <Layout className='pt-0 -mt-10 sm:mt-0 lg:-mt-20'>
           <div className='flex items-center justify-between w-full flex-col lg:flex-row'>
             <div className='md:w-1/2 w-full'>
               <Image
@@ -64,14 +64,14 @@ export default function HomePage() {
             </div>
             <div className='lg:w-1/2 w-full xl:w-3/4 text-center lg:text-left flex flex-col items-center self-center'>
               <AnimatedText
-                className='!text-3xl sm:!text-5xl md:!text-6xl !text-center lg:!text-left lg:!text-5xl xl:!text-6xl mb-4 tracking-wide'
+                className='!text-3xl sm:!text-4xl md:!text-5xl lg:!text-6xl !text-center lg:!text-left lg:!text-5xl xl:!text-6xl mb-4 tracking-wide'
                 text='Turning Vision Into Reality With Code And Design.'
               />
               <motion.p
                 variants={paragraphVariant}
                 initial='initial'
                 animate='animate'
-                className='leading-6 mb-4'
+                className='leading-6 mb-4 text-sm md:text-base'
               >
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
@@ -89,7 +89,7 @@ export default function HomePage() {
                   target='_blank'
                   rel='noopener noreferrer'
                   download={true}
-                  className='flex items-center gap-2 bg-violet-900 text-light p-2.5 px-6 rounded-lg text-lg font-semibold tracking-wide transition duration-200 hover:bg-violet-800 '
+                  className='flex items-center gap-2 bg-violet-900 text-light p-2.5 text-base md:px-6 rounded-lg md:text-lg font-semibold tracking-wide transition duration-200 hover:bg-violet-800'
                 >
                   Resume
                   <LinkArrow />
@@ -98,7 +98,7 @@ export default function HomePage() {
                   href='mailto:jerry-doran@hotmail.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className=' text-lg font-medium tracking-wide underline transition duration-200 dark:hover:text-violet-500 hover:text-violet-700'
+                  className=' md:text-lg text-base font-medium tracking-wide underline transition duration-200 dark:hover:text-violet-500 hover:text-violet-700'
                 >
                   Contact
                 </Link>

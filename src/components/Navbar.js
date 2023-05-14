@@ -59,7 +59,7 @@ export default function Navbar() {
     setOpen(!open);
   }
   return (
-    <header className='w-full px-8 md:px-12 lg:px-16 xl:px-32 font-medium flex items-center justify-between dark:text-light relative pt-8'>
+    <header className='w-full px-8 md:px-12 lg:px-16 xl:px-32 font-medium flex items-center justify-between dark:text-light relative pt-8 z-10'>
       <Logo />
       <div className='hidden xl:flex'>
         {/* <h1 className='text-slate-400'>
