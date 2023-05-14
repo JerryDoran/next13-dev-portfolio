@@ -6,7 +6,7 @@ import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import AnimatedText from '@/components/global/AnimatedText';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { LinkArrow } from '../components/global/Icons';
+import { HiArrowTopRightOnSquare } from 'react-icons/hi2';
 import HireMe from '@/components/HireMe';
 
 const paragraphVariant = {
@@ -64,7 +64,7 @@ export default function HomePage() {
             </div>
             <div className='lg:w-1/2 w-full xl:w-3/4 text-center lg:text-left flex flex-col items-center self-center'>
               <AnimatedText
-                className='!text-3xl sm:!text-4xl md:!text-5xl lg:!text-6xl !text-center lg:!text-left lg:!text-5xl xl:!text-6xl mb-4 tracking-wide'
+                className='!text-2xl sm:!text-4xl md:!text-5xl lg:!text-5xl !text-center lg:!text-left xl:!text-6xl mb-4 tracking-wide'
                 text='Turning Vision Into Reality With Code And Design.'
               />
               <motion.p
@@ -92,7 +92,7 @@ export default function HomePage() {
                   className='flex items-center gap-2 bg-violet-900 text-light p-2.5 text-base md:px-6 rounded-lg md:text-lg font-semibold tracking-wide transition duration-200 hover:bg-violet-800'
                 >
                   Resume
-                  <LinkArrow />
+                  <HiArrowTopRightOnSquare className='font-700 text-xl md:text-2xl' />
                 </Link>
                 <Link
                   href='mailto:jerry-doran@hotmail.com'

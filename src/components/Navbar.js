@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Logo from './Logo';
 import { useRouter } from 'next/router';
 import useThemeSwitcher from '@/hooks/useThemeSwitcher';
-import { MoonIcon, SunIcon } from './global/Icons';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { BsSunFill, BsMoonStarsFill } from 'react-icons/bs';
 
 function CustomLink({ href, title, className = '' }) {
   const router = useRouter();
@@ -87,7 +87,7 @@ export default function Navbar() {
           initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.2 }}
-          className='min-w-[40vw] flex flex-col justify-center items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-dark/75 rounded-lg backdrop-blur-lg py-20'
+          className='min-w-[60vw] flex flex-col justify-center items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-dark/75 rounded-lg backdrop-blur-lg py-20'
         >
           <nav className='flex flex-col items-center justify-center'>
             <MobileLink
@@ -126,9 +126,9 @@ export default function Navbar() {
         }`}
       >
         {mode === 'dark' ? (
-          <SunIcon className='fill-dark' />
+          <BsSunFill className='fill-dark' />
         ) : (
-          <MoonIcon className='fill-light' />
+          <BsMoonStarsFill className='fill-light' />
         )}
       </button>
 
