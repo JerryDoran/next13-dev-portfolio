@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 function Skill({ name, x, y }) {
   return (
     <motion.div
-      className='flex items-center justify-center rounded-full font-semibold text-light bg-dark text-dark p-1.5 px-2 shadow-dark cursor-pointer absolute md:dark:text-dark md:dark:bg-light text-sm bg-transparent dark:bg-transparent'
+      className='flex items-center justify-center rounded-full font-semibold dark:text-light bg-dark text-dark p-1.5 px-2 shadow-dark cursor-pointer absolute md:dark:text-dark md:dark:bg-light text-sm bg-transparent dark:bg-transparent'
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
