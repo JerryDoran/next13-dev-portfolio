@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 function Skill({ name, x, y }) {
   return (
     <motion.div
-      className='flex items-center justify-center rounded-full font-semibold dark:text-light bg-dark text-dark p-1.5 px-2 shadow-dark cursor-pointer absolute md:dark:text-dark md:dark:bg-light text-sm bg-transparent dark:bg-transparent'
+      className='flex items-center justify-center rounded-full font-semibold dark:text-light md:text-light md:bg-dark text-dark p-1.5 px-2 shadow-dark cursor-pointer absolute md:dark:text-dark md:dark:bg-light text-sm bg-transparent dark:bg-transparent'
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
@@ -17,10 +17,10 @@ function Skill({ name, x, y }) {
 export default function Skills() {
   return (
     <>
-      <h2 className='font-bold text-6xl mt-32 w-full text-center dark:text-light'>
+      <h2 className='font-bold text-6xl mt-32 mb-4 w-full text-center dark:text-light'>
         Skills
       </h2>
-      <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark'>
+      <div className='w-full h-[50vh] lg:max-w-[1000px] lg:mx-auto lg:h-screen xs:h-[60vh] sm:h-[80vh] relative flex items-center justify-center rounded-full bg-circularLightSm dark:bg-circularDarkSm sm:bg-circularLightMd sm:dark:bg-circularDarkMd md:bg-circularLightLg md:dark:bg-circularDarkLg lg:bg-circularLight lg:dark:bg-circularDark'>
         <motion.div
           className='flex items-center justify-center rounded-full font-semibold bg-dark text-light md:px-6 md:py-7 px-4 py-5 shadow-dark cursor-pointer dark:text-dark dark:bg-light text-xs md:text-base'
           whileHover={{ scale: 1.05 }}
