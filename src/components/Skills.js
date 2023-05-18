@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import AnimatedText from './global/AnimatedText';
 
 function Skill({ name, x, y }) {
   return (
@@ -17,9 +18,10 @@ function Skill({ name, x, y }) {
 export default function Skills() {
   return (
     <>
-      <h2 className='font-bold text-6xl mt-32 mb-4 w-full text-center dark:text-light'>
-        Skills
-      </h2>
+      <AnimatedText
+        text='Skills'
+        className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl !mt-40'
+      />
       <div className='w-full h-[50vh] lg:max-w-[1000px] lg:mx-auto lg:h-screen xs:h-[60vh] sm:h-[80vh] relative flex items-center justify-center rounded-full bg-circularLightSm dark:bg-circularDarkSm sm:bg-circularLightMd sm:dark:bg-circularDarkMd md:bg-circularLightLg md:dark:bg-circularDarkLg lg:bg-circularLight lg:dark:bg-circularDark'>
         <motion.div
           className='flex items-center justify-center rounded-full font-semibold bg-dark text-light md:px-6 md:py-7 px-4 py-5 shadow-dark cursor-pointer dark:text-dark dark:bg-light text-xs md:text-base'

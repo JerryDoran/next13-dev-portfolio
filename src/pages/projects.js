@@ -4,6 +4,10 @@ import { GithubIcon } from '@/components/global/Icons';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Items from '../components/Items';
+import List from '../components/List';
+import { projects } from '../components/projectData';
+import { useState } from 'react';
 import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
 import project2 from '../../public/images/projects/portfolio-cover-image.jpg';
 import { motion } from 'framer-motion';
@@ -105,7 +109,26 @@ function Project({ title, img, link, githubLink }) {
   );
 }
 
+const navCategories = [
+  'all',
+  ...new Set(projects.map((project) => project.category)),
+];
+
 export default function ProjectsPage() {
+  const [projectItems, setProjectItems] = useState(projects);
+  const [categories, setCategories] = useState(navCategories);
+
+  function filterItems(category) {
+    if (category === 'all') {
+      setProjectItems(projects);
+      return;
+    }
+    const newProjectItems = projects.filter(
+      (project) => project.category === category
+    );
+
+    setProjectItems(newProjectItems);
+  }
   return (
     <>
       <Head>
@@ -116,9 +139,33 @@ export default function ProjectsPage() {
         <Layout className='pt-16'>
           <AnimatedText
             text='Solutions to inspire your business!'
-            className='mb-16'
+            className='mb-8'
           />
-          <div className='grid grid-cols-12 gap-24'>
+          <section className='portfolio section' id='work'>
+            {/* <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              <AnimatedText text='My Work' className='!mb-1 !text-violet-700' />
+            </motion.div> */}
+
+            <div>
+              <List categories={categories} filterItems={filterItems} />
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 1.2 }}
+                className='grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-2 grid'
+              >
+                <Items projectItems={projectItems} />
+              </motion.div>
+            </div>
+          </section>
+
+          {/* <div className='grid grid-cols-12 gap-24'>
             <div className='col-span-12'>
               <FeaturedProject
                 title='Crypto Screener Application'
@@ -177,7 +224,7 @@ export default function ProjectsPage() {
                 img={project1}
               />
             </div>
-          </div>
+          </div> */}
         </Layout>
       </main>
     </>

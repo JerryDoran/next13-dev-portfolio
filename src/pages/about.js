@@ -40,7 +40,7 @@ export default function AboutPage() {
         <title>Doran Software | About Page</title>
         <meta name='description' content='Jerry Doran software engineer' />
       </Head>
-      <main className='flex w-full flex-col items-center justify-center'>
+      <main className='flex w-full h-auto flex-col items-center justify-center'>
         <Layout className='pt-16'>
           <AnimatedText
             text='Passion Fuels Purpose!'
@@ -69,7 +69,7 @@ export default function AboutPage() {
                 your next project.
               </p>
             </div>
-            <div className='xl:col-span-3 md:col-span-4 col-span-8 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-light p-6 dark:bg-light/80 dark:border-transparent order-1 lg:order-none'>
+            <div className='xl:col-span-3 md:col-span-4 col-span-8 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-white p-6 dark:bg-light/80 dark:border-transparent order-1 lg:order-none'>
               {/* <div className='absolute top-[1px] -right-2.5 -z-10 w-[101%] h-[102%] rounded-[1.2rem] bg-dark' /> */}
               <Image
                 src={about}
