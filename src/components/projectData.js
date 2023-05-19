@@ -1,52 +1,61 @@
 import { BiCodeAlt } from 'react-icons/bi';
 import { RiStackFill } from 'react-icons/ri';
 import { FaChartBar } from 'react-icons/fa';
+import ecommerce1 from '../../public/images/projects/ecommerce-music-app.png';
+import ecommerce2 from '../../public/images/projects/ecommerce-apple-app.png';
+import ui1 from '../../public/images/projects/ui-design-metaverse.png';
+import ui2 from '../../public/images/projects/ui-design-hoobank.png';
+import business1 from '../../public/images/projects/business-gym-site.png';
+import business2 from '../../public/images/projects/business-rosa.png';
+import business3 from '../../public/images/projects/business-crypto-tracker.png';
+import social1 from '../../public/images/projects/social-twitter-app.png';
+import business4 from '../../public/images/projects/ui-movie-database.png';
 
 export const projects = [
   {
     id: 1,
-    img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'Branding',
-    title: 'Zorro',
+    img: ecommerce1,
+    category: 'e-commerce',
+    title: 'Thanos Music',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },
   {
     id: 2,
-    img: 'https://images.unsplash.com/photo-1683009427666-340595e57e43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'UI Design',
-    title: 'Test',
+    img: ui1,
+    category: 'ui design',
+    title: 'Explore the Metaverse',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },
   {
     id: 3,
-    img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'Mobile App',
-    title: 'Test2',
+    img: business4,
+    category: 'business',
+    title: 'Entertainment Hub',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },
   {
     id: 4,
-    img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'E-commerce',
-    title: 'Test3',
+    img: ecommerce2,
+    category: 'e-commerce',
+    title: 'Apple Commerce',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },
   {
     id: 5,
-    img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'Apps',
-    title: 'Test4',
+    img: business1,
+    category: 'business',
+    title: 'Fit Club Gym',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },
   {
     id: 6,
     img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'Mobile App',
+    category: 'mobile apps',
     title: 'Test5',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
@@ -54,24 +63,40 @@ export const projects = [
   {
     id: 7,
     img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'E-commerce',
+    category: 'e-commerce',
     title: 'Test6',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },
   {
     id: 8,
-    img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'Branding',
-    title: 'Test7',
+    img: business2,
+    category: 'business',
+    title: 'The Rosa Restaurant',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },
   {
     id: 9,
-    img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'UI Design',
-    title: 'Test8',
+    img: ui2,
+    category: 'ui design',
+    title: 'Next Gen Banking',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
+  },
+  {
+    id: 10,
+    img: business3,
+    category: 'business',
+    title: 'Crypto Tracker',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
+  },
+  {
+    id: 11,
+    img: social1,
+    category: 'social',
+    title: 'Twitter Close',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },

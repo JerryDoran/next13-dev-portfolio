@@ -13,24 +13,23 @@ export default function Items({ projectItems }) {
       {projectItems.map((projectItem) => (
         <div
           key={projectItem.id}
-          className='w-full p-5 bg-light border border-solid border-neutral-200 rounded-2xl shadow-2xl dark:bg-dark dark:border-neutral-500'
+          className='w-full p-5 bg-light border border-solid border-neutral-200 rounded-xl shadow-2xl dark:bg-dark dark:border-neutral-500'
         >
           <Link
             href='#'
             target='_blank'
-            className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'
+            className='w-full inline-block cursor-pointer overflow-hidden rounded-md'
           >
             <FramerImage
               src={projectItem.img}
               alt='some text'
-              width={1}
-              height={1}
-              className='w-full h-auto rounded-2xl'
+              width={0}
+              height={0}
+              className='w-full h-auto'
               whileHover={{ scale: 1.05 }}
               transition={{ duaration: 0.2 }}
               priority
-              sizes='(max-width: 768px) 100vw,
-                (max-width: 1200px) 50vw, 50vw'
+              sizes='100vw'
             />
           </Link>
 
