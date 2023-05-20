@@ -14,13 +14,13 @@ function Service({ title, icon, description }) {
 
 export default function Services() {
   return (
-    <div className='mb-[80rem] sm:mb-[20rem] md:mb-40 lg:mb-0'>
+    <div className='w-full h-[170vh] xl:h-screen'>
       <AnimatedText
         text='My Services'
         className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl !mt-20'
       />
       <div
-        className='w-full h-screen p-10 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10'
+        className=' p-10 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10'
         whileHover={{ scale: 1.05 }}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}

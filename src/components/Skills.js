@@ -20,7 +20,7 @@ export default function Skills() {
     <>
       <AnimatedText
         text='Skills'
-        className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl !mt-40'
+        className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl !mt-20'
       />
       <div className='w-full h-[50vh] lg:max-w-[1000px] lg:mx-auto lg:h-screen xs:h-[60vh] sm:h-[80vh] relative flex items-center justify-center rounded-full bg-circularLightSm dark:bg-circularDarkSm sm:bg-circularLightMd sm:dark:bg-circularDarkMd md:bg-circularLightLg md:dark:bg-circularDarkLg lg:bg-circularLight lg:dark:bg-circularDark'>
         <motion.div

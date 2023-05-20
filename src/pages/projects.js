@@ -38,7 +38,7 @@ export default function ProjectsPage() {
         <Layout className='pt-16'>
           <AnimatedText
             text='Solutions to inspire your business!'
-            className='mb-8'
+            className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl'
           />
           <section className='portfolio section' id='work'>
             {/* <motion.div
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 1.2 }}
-                className='grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-2 grid'
+                className='grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 p-2 grid'
               >
                 <Items projectItems={projectItems} />
               </motion.div>

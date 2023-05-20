@@ -15,8 +15,8 @@ export default function List({ categories, filterItems }) {
         <button
           className={`${
             active === index
-              ? 'text-violet-500 text-sm font-semibold relative transition duration-200 ease-linear uppercase tracking-wide hover:text-violet-500'
-              : 'text-sm font-semibold relative transition duration-200 ease-linear uppercase tracking-wide hover:text-violet-500 '
+              ? 'bg-violet-500 py-1 px-2 rounded-xl text-xs sm:text-sm font-semibold relative transition duration-200 ease-linear uppercase tracking-wide'
+              : 'text-xs sm:text-sm font-semibold relative transition duration-200 ease-linear uppercase tracking-wide hover:text-violet-500 '
           }`}
           key={index}
           onClick={() => {

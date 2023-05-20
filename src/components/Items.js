@@ -13,7 +13,7 @@ export default function Items({ projectItems }) {
       {projectItems.map((projectItem) => (
         <div
           key={projectItem.id}
-          className='w-full p-5 bg-light border border-solid border-neutral-200 rounded-xl shadow-2xl dark:bg-dark dark:border-neutral-500'
+          className='w-full p-5 bg-light rounded-xl shadow-2xl dark:bg-dark border border-white/20 dark:border-neutral-700 dark:shadow-white/30'
         >
           <Link
             href='#'
