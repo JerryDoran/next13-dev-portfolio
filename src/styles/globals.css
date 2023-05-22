@@ -26,13 +26,8 @@
 }
 
 .icon svg {
-  width: 5rem;
-  height: 5rem;
-}
-
-.service-title,
-.service-description {
-  text-align: center;
+  width: 4rem;
+  height: 4rem;
 }
 
 .service-title {

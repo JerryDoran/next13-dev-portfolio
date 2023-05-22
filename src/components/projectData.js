@@ -96,7 +96,15 @@ export const projects = [
     id: 11,
     img: social1,
     category: 'design',
-    title: 'Twitter Close',
+    title: 'Twitter Clone',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
+  },
+  {
+    id: 12,
+    img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+    category: 'analytics',
+    title: 'Test6',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
   },
