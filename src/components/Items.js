@@ -46,7 +46,7 @@ export default function Items({ projectItems }) {
               href={`/projects/${projectItem.slug}`}
               className='flex items-center gap-1.5 transition duration-200 px-4 py-1 rounded-2xl text-sm dark:hover:bg-neutral-800 dark:hover:text-violet-500 hover:bg-neutral-300 hover:text-violet-600'
             >
-              <SiOpenproject />
+              
               Read More
             </Link>
             {/* <a
