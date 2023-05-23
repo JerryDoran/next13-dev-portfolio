@@ -3,7 +3,7 @@ import AnimatedText from '@/components/global/AnimatedText';
 import Head from 'next/head';
 import Items from '../components/Items';
 import List from '../components/List';
-import { projects } from '../components/projectData';
+import { projects } from '../data/projectData';
 import { useState } from 'react';
 
 import { motion } from 'framer-motion';

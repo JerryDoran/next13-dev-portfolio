@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { services } from './projectData';
+import { services } from '../data/projectData';
 import AnimatedText from './global/AnimatedText';
 
 function Service({ title, icon, description }) {

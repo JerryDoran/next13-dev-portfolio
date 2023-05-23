@@ -12,12 +12,12 @@ export default function Items({ projectItems }) {
     <>
       {projectItems.map((projectItem) => (
         <div
-          key={projectItem.id}
+          key={projectItem.slug}
           className='w-full p-5 bg-light rounded-xl shadow-lg dark:bg-dark border border-white/20 dark:border-neutral-700 dark:shadow-white/10'
         >
           <Link
-            href='#'
-            target='_blank'
+            href={`/projects/${projectItem.slug}`}
+            // target='_blank'
             className='w-full inline-block cursor-pointer overflow-hidden rounded-md'
           >
             <FramerImage
@@ -39,23 +39,23 @@ export default function Items({ projectItems }) {
           <div className='text-xl font-semibold text-violet-500 mb-4 mt-1'>
             {projectItem.title}
           </div>
-          <p className='mb-6'>{projectItem.description}</p>
+          <p className='mb-6 text-sm md:text-base'>{projectItem.description}</p>
 
           <div className='flex items-center'>
-            <a
-              href='#'
-              className='flex items-center gap-1.5 transition duration-200 px-4 py-1 rounded-2xl dark:hover:bg-neutral-800 dark:hover:text-violet-500 hover:bg-neutral-300 hover:text-violet-600'
+            <Link
+              href={`/projects/${projectItem.slug}`}
+              className='flex items-center gap-1.5 transition duration-200 px-4 py-1 rounded-2xl text-sm dark:hover:bg-neutral-800 dark:hover:text-violet-500 hover:bg-neutral-300 hover:text-violet-600'
             >
               <SiOpenproject />
-              Project
-            </a>
-            <a
+              Read More
+            </Link>
+            {/* <a
               href='#'
               className='flex items-center gap-1.5 transition duration-200 px-4 py-1 rounded-2xl dark:hover:bg-neutral-800 dark:hover:text-violet-500 hover:bg-neutral-300 hover:text-violet-600'
             >
               <FaGithub />
               Code
-            </a>
+            </a> */}
           </div>
         </div>
       ))}
