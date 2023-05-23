@@ -20,6 +20,8 @@ export const projects = [
     title: 'Thanos Music',
     description:
       'An easy to use ecommerce site to take care of all your electronic and music needs.',
+    summary: '',
+    technologies: [],
   },
   {
     slug: 'metaverse',
@@ -29,6 +31,7 @@ export const projects = [
     description:
       'Enjoy the virtual world of the metaverse through the use of state of the art VR devices.',
     summary: 'Summary of the Metaverse Project',
+    technologies: ['React', 'Tailwind CSS', 'Javascript', 'Framer Motion'],
   },
   {
     slug: 'entertainment-hub',
@@ -45,6 +48,8 @@ export const projects = [
     title: 'Apple Commerce',
     description:
       'Order new state of the art devices or browse for your favorite apple products.',
+    summary: '',
+    technologies: [],
   },
   {
     slug: 'fit-club',
@@ -53,6 +58,8 @@ export const projects = [
     title: 'Fit Club Gym',
     description:
       'Feel your best and perform at the level you want in our all inclusive fit club.',
+    summary: '',
+    technologies: [],
   },
   {
     slug: 'mobile-one',
@@ -61,6 +68,8 @@ export const projects = [
     title: 'Mobile One',
     description:
       'Coming soon a mobile app that will make your life so much more convenient.',
+    summary: '',
+    technologies: [],
   },
   {
     slug: 'rosa-restaurant',
@@ -69,6 +78,8 @@ export const projects = [
     title: 'The Rosa Restaurant',
     description:
       'Enjoy fun times and delicious authentic food in a wonderful family environment.',
+    summary: '',
+    technologies: [],
   },
   {
     slug: 'next-gen-banking',
@@ -77,6 +88,8 @@ export const projects = [
     title: 'Next Gen Banking',
     description:
       'Next generation banking is here in this easy to use new banking site of the future.',
+    summary: '',
+    technologies: [],
   },
   {
     slug: 'crypto-tracker',
@@ -84,7 +97,9 @@ export const projects = [
     category: 'business',
     title: 'Crypto Tracker',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est vitae sem porta tempus. Ut egestas vulputate lacus vel tempus. Proin tempus purus sapien, eu blandit est commodo vel.',
+      'Track your favorite crypto currencies and save them to your user profile.',
+    summary: '',
+    technologies: [],
   },
   {
     slug: 'twitter-clone',
@@ -93,6 +108,8 @@ export const projects = [
     title: 'Twitter Clone',
     description:
       'A clone of a popular social media app that exhibits attention to detail and design.',
+    summary: '',
+    technologies: [],
   },
   {
     slug: 'admin-dashboard-one',
@@ -101,6 +118,8 @@ export const projects = [
     title: 'Admin Dashbord One',
     description:
       'Coming soon an admin dashboard tracking app for analyzing your business performance',
+    summary: '',
+    technologies: [],
   },
 ];
 
