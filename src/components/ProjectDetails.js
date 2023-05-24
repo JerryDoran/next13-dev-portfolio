@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import metaverseTwo from '@public/images/projects/metaverse-2.png';
-import metaverseThree from '@public/images/projects/metaverse-3.png';
-import metaverseFour from '@public/images/projects/metaverse-4.png';
-import metaverseFive from '@public/images/projects/metaverse-5.png';
+import metaverseTwo from '../../public/images/projects/metaverse-2.png';
+import metaverseThree from '../../public/images/projects/metaverse-3.png';
+import metaverseFour from '../../public/images/projects/metaverse-4.png';
+import metaverseFive from '../../public/images/projects/metaverse-5.png';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
