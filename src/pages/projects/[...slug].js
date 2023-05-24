@@ -1,9 +1,8 @@
+import ProjectDetails from '@/components/ProjectDetails';
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/global/AnimatedText';
-import ProjectDetails from '@src/components/ProjectDetails';
+
 import Head from 'next/head';
-
-
 
 export default function ProjectDetailsPage() {
   return (
