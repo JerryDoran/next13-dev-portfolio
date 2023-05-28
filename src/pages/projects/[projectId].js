@@ -1,10 +1,18 @@
+'use client';
+
 import ProjectDetails from '@/components/ProjectDetails';
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/global/AnimatedText';
 
+import { useRouter } from 'next/router';
+
 import Head from 'next/head';
 
 export default function ProjectDetailsPage() {
+  const router = useRouter();
+
+  const { projectId } = router?.query;
+
   return (
     <>
       <Head>
@@ -15,9 +23,9 @@ export default function ProjectDetailsPage() {
         <Layout className='!p-4'>
           <AnimatedText
             text='More about the Project'
-            className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl'
+            className='sm:mb-10 mb-8 mt-16 !text-4xl sm:!text-6xl'
           />
-          <ProjectDetails />
+          <ProjectDetails projectId={projectId} />
         </Layout>
       </main>
     </>

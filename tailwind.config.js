@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['var(--font-montserrat)', ...fontFamily.sans],
+        poppins: ['var(--font-poppins)', ...fontFamily.sans],
       },
       colors: {
         dark: '#1b1b1b',
@@ -38,6 +38,13 @@ module.exports = {
           'repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 4px,#1b1b1b 40px)',
       },
     },
+    // fontSize: {
+    //   sm: ['14px', '1.25rem'],
+    //   base: ['16px', '1.25rem'],
+    //   lg: ['20px', '1.25rem'],
+    //   xl: ['24px', '1.25rem'],
+    //   header: ['36px', '1.25rem'],
+    // },
     // screens: {
     //   '2xl': { max: '1535px' },
     //   // => @media (max-width: 1535px) { ... }

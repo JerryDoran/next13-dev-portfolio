@@ -38,7 +38,7 @@ export default function ProjectsPage() {
         <Layout className='pt-16'>
           <AnimatedText
             text='Solutions to inspire your business!'
-            className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl'
+            className='sm:mb-12 mb-8 !text-4xl sm:!text-6xl'
           />
           <section className='portfolio section' id='work'>
             {/* <motion.div

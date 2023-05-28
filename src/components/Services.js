@@ -4,8 +4,10 @@ import AnimatedText from './global/AnimatedText';
 
 function Service({ title, icon, description }) {
   return (
-    <div className='dark:bg-dark bg-light dark:text-light flex flex-col justify-center items-center gap-5 px-5 py-7 rounded-lg cursor-pointer shadow-lg dark:shadow-white/40 shadow-black/40 transition duration-200 hover:scale-[1.02] hover:shadow-violet-700 dark:hover:shadow-violet-500'>
-      <div className='icon hover:text-violet-500'>{icon}</div>
+    <div className='group dark:bg-dark bg-light dark:text-light flex flex-col justify-center items-center gap-5 px-5 py-7 rounded-lg cursor-pointer shadow-lg dark:shadow-white/40 shadow-black/40 transition duration-200 hover:scale-[1.02] hover:shadow-violet-700 dark:hover:shadow-violet-500'>
+      <div className='icon transition duration-200 group-hover:text-violet-500'>
+        {icon}
+      </div>
       <h3 className='text-center text-xl font-bold'>{title}</h3>
       <p className='text-center'>{description}</p>
     </div>

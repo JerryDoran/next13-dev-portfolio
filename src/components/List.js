@@ -9,7 +9,7 @@ export default function List({ categories, filterItems }) {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.9 }}
-      className='flex justify-center space-x-4 m-[60px] flex-wrap gap-y-2'
+      className='flex justify-center space-x-4 m-[60px] mt-5 flex-wrap gap-y-2'
     >
       {categories.map((category, index) => (
         <button

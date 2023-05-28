@@ -2,12 +2,13 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
 
-import { Open_Sans } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Head from 'next/head';
 
-const openSans = Open_Sans({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-open-sans',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export default function App({ Component, pageProps }) {
@@ -18,7 +19,7 @@ export default function App({ Component, pageProps }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main
-        className={`${openSans.variable} font-open-sans bg-light dark:bg-dark w-full min-h-screen`}
+        className={`${poppins.variable} font-poppins bg-light dark:bg-dark w-full min-h-screen`}
       >
         <Navbar />
         <Component {...pageProps} />
