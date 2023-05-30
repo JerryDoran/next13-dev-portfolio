@@ -26,10 +26,8 @@ const gridVariant = {
 
 export default function ProjectDetails({ projectId }) {
   const projectValue = projects.filter((project) => project.slug === projectId);
-  console.log(projectValue);
-  const [project] = projectValue;
 
-  console.log(project);
+  const [project] = projectValue;
 
   return (
     <div>
@@ -102,7 +100,7 @@ export default function ProjectDetails({ projectId }) {
       </motion.div>
       <div className='mt-10'>
         <div className='p-2 grid md:grid-cols-5 gap-6 py-6'>
-          <div className='col-span-4 '>
+          <div className='col-span-4'>
             <p className='text-violet-600 text-2xl tracking-wider mb-3 text-semibold'>
               Project
             </p>
@@ -110,14 +108,18 @@ export default function ProjectDetails({ projectId }) {
             <p className=''>{project?.summary}</p>
             <div className='flex items-center gap-3 mt-5 text-white'>
               <Link
-                href='/'
+                href={project?.demoLink || ''}
+                target='_blank'
+                rel='noopener'
                 className='flex items-center gap-1.5 transition duration-200 px-4 py-1 rounded-2xl text-sm bg-violet-600 hover:bg-violet-700'
               >
                 <SiOpenproject />
                 Demo
               </Link>
               <Link
-                href='/'
+                href={project?.codeLink || ''}
+                target='_blank'
+                rel='noopener'
                 className='flex items-center gap-1.5 transition duration-200 px-4 py-1 rounded-2xl text-sm bg-violet-600 hover:bg-violet-700'
               >
                 <FaGithub />
@@ -130,7 +132,7 @@ export default function ProjectDetails({ projectId }) {
               <p className='text-center font-bold pb-2'>Built With</p>
               {project?.technologies?.map((tech) => (
                 <div key={tech} className=''>
-                  <p className='text-gray-600 dark:text-gray-200 py-1 flex items-center gap-2'>
+                  <p className='text-gray-600 text-sm dark:text-gray-200 py-1 flex items-center gap-2'>
                     <RiRadioButtonFill className='p-0.5' /> {tech}
                   </p>
                 </div>

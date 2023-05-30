@@ -42,6 +42,8 @@ export const projects = [
     image4: thanos4,
     summary: 'Summary of Thanos Music',
     technologies: ['NextJS', 'Sanity CMS', 'Stripe', 'Javascript'],
+    demoLink: '',
+    codeLink: '',
   },
   {
     slug: 'metaverse',
@@ -54,8 +56,17 @@ export const projects = [
     image2: metaverse2,
     image3: metaverse3,
     image4: metaverse4,
-    summary: 'Summary of the Metaverse Project',
-    technologies: ['React', 'Tailwind CSS', 'Javascript', 'Framer Motion'],
+    summary:
+      'Next Metaverse is a web application design that is written using NextJS.  It provides information for how users can explore interactive environments, customize avatars, interact with other users, and personalize their experience with customizable objects. The project leverages the power of Next.js for server-side rendering and is styled with utility class framework of tailwind css for providing dynamic features of this site.',
+    technologies: [
+      'React',
+      'Tailwind CSS',
+      'Javascript',
+      'Framer Motion',
+      'Three JS',
+    ],
+    demoLink: 'https://doran-metaverse.vercel.app/',
+    codeLink: 'https://github.com/JerryDoran/next-metaverse',
   },
   {
     slug: 'entertainment-hub',
@@ -70,6 +81,25 @@ export const projects = [
     image4: metaverse4,
     summary: 'Summary of Entertainment Hub',
     technologies: ['', '', '', ''],
+    demoLink: '',
+    codeLink: '',
+  },
+  {
+    slug: 'next-properties',
+    img: business4,
+    category: 'business',
+    title: 'Next Gen Realty',
+    description:
+      'Explore and browse your favorite properties and locations in all in one place.',
+    image1: metaverse1,
+    image2: metaverse2,
+    image3: metaverse3,
+    image4: metaverse4,
+    summary:
+      "This is a realestate design site that showcases some of the features of a realty application.  Functionality for real estate property search can be added upon request to this application.  View detailed information about each property, including images, description, price, and contact information.  Save functionality can be implemented upon request to save favorite listings by clicking the 'Save' button, allowing you to revisit them later.  Customization of your search preferences and filter results based on various criteria can also be added to this application upon request.",
+    technologies: ['NextJS', 'Chakra UI', 'React', 'Javascript'],
+    demoLink: 'https://next-realestate-app-ten.vercel.app/',
+    codeLink: 'https://github.com/JerryDoran/next-realestate-app',
   },
   {
     slug: 'apple-commerce',
@@ -91,6 +121,8 @@ export const projects = [
       'Sanity CMS',
       'Tailwind CSS',
     ],
+    demoLink: '',
+    codeLink: '',
   },
   {
     slug: 'fit-club',
@@ -106,20 +138,22 @@ export const projects = [
     summary: 'Summary of The Fit Club',
     technologies: ['React', 'Chakra UI', 'Framer Motion', 'Javascript'],
   },
-  {
-    slug: 'mobile-one',
-    img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixslug=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
-    category: 'mobile',
-    title: 'Mobile One',
-    description:
-      'Coming soon a mobile app that will make your life so much more convenient.',
-    image1: metaverse1,
-    image2: metaverse2,
-    image3: metaverse3,
-    image4: metaverse4,
-    summary: 'Summary of a Mobile App',
-    technologies: ['', '', '', ''],
-  },
+  // {
+  //   slug: 'mobile-one',
+  //   img: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixslug=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+  //   category: 'mobile',
+  //   title: 'Mobile One',
+  //   description:
+  //     'Coming soon a mobile app that will make your life so much more convenient.',
+  //   image1: metaverse1,
+  //   image2: metaverse2,
+  //   image3: metaverse3,
+  //   image4: metaverse4,
+  //   summary: 'Summary of a Mobile App',
+  //   technologies: ['', '', '', ''],
+  //   demoLink: '',
+  //   codeLink: '',
+  // },
   {
     slug: 'rosa-restaurant',
     img: business2,
@@ -133,6 +167,8 @@ export const projects = [
     image4: metaverse4,
     summary: 'Summary of The Rosa',
     technologies: ['', '', '', ''],
+    demoLink: '',
+    codeLink: '',
   },
   {
     slug: 'next-gen-banking',
@@ -147,6 +183,8 @@ export const projects = [
     image4: metaverse4,
     summary: 'Summary of Next Generation Banking',
     technologies: ['', '', '', ''],
+    demoLink: '',
+    codeLink: '',
   },
   {
     slug: 'crypto-tracker',
@@ -161,6 +199,8 @@ export const projects = [
     image4: metaverse4,
     summary: 'Summary of Fitness Tracker',
     technologies: ['', '', '', ''],
+    demoLink: '',
+    codeLink: '',
   },
   {
     slug: 'twitter-clone',
@@ -173,23 +213,34 @@ export const projects = [
     image2: metaverse2,
     image3: metaverse3,
     image4: metaverse4,
-    summary: 'Summary of Twitter Clone',
-    technologies: ['', '', '', ''],
+    summary:
+      "The Firebase Twitter Clone is a web application that replicates the functionality of Twitter using Firebase as the backend. Users can create tweets, follow others, view profiles, and search for tweets. Authentication is handled by Firebase Authentication, while Firebase Firestore stores and synchronizes tweet data. The clone allows users to engage in real-time social media interactions while leveraging Firebase's powerful features. With a seamless integration of Firebase services, the project provides an efficient and scalable solution for building a Twitter-like application.",
+    technologies: [
+      'Firebase Auth',
+      'Firestore',
+      'React',
+      'Tailwind CSS',
+      'Javascript',
+    ],
+    demoLink: 'https://next-twitter-clone-tau.vercel.app/',
+    codeLink: 'https://github.com/JerryDoran/next-twitter-clone',
   },
-  {
-    slug: 'admin-dashboard-one',
-    img: admin1,
-    category: 'analytics',
-    title: 'Admin Dashbord One',
-    description:
-      'Coming soon an admin dashboard tracking app for analyzing your business performance',
-    image1: metaverse1,
-    image2: metaverse2,
-    image3: metaverse3,
-    image4: metaverse4,
-    summary: 'Summary of Admin Dashboard',
-    technologies: ['', '', '', ''],
-  },
+  // {
+  //   slug: 'admin-dashboard-one',
+  //   img: admin1,
+  //   category: 'analytics',
+  //   title: 'Admin Dashbord One',
+  //   description:
+  //     'Coming soon an admin dashboard tracking app for analyzing your business performance',
+  //   image1: metaverse1,
+  //   image2: metaverse2,
+  //   image3: metaverse3,
+  //   image4: metaverse4,
+  //   summary: 'Summary of Admin Dashboard',
+  //   technologies: ['', '', '', ''],
+  //   demoLink: '',
+  //   codeLink: '',
+  // },
 ];
 
 export const services = [
