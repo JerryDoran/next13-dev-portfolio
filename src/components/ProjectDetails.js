@@ -32,7 +32,7 @@ export default function ProjectDetails({ projectId }) {
   return (
     <div>
       <motion.div
-        className='grid grid-cols-6 gap-2 relative'
+        className='grid grid-cols-6 gap-2 relative p-2 rounded-lg bg-gray-500 '
         variants={gridVariant}
         initial='initial'
         animate='animate'

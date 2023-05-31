@@ -87,7 +87,7 @@ export const projects = [
     image3: metaverse3,
     image4: metaverse4,
     summary:
-      'Entertainment DB is a web application that serves as a database for various entertainment media such as movies, TV shows, and books. It provides a platform for users to explore, search, and discover information about their favorite entertainment titles. The application is built using React and leverages a backend API to fetch and manage the media data.',
+      'Entertainment DB is a web application that serves as a database for various entertainment media such as movies and TV shows. It provides a platform for users to explore, search, and discover information about their favorite entertainment titles. The application is built using React and leverages a backend API to fetch and manage the media data.',
     technologies: ['React', 'Material UI', 'Movie DB API'],
     demoLink: 'https://my-entertainment-hub.netlify.app/',
     codeLink: 'https://github.com/JerryDoran/entertainment-db',
