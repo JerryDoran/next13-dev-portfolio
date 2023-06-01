@@ -144,8 +144,11 @@ export const projects = [
     image2: gym2,
     image3: gym3,
     image4: gym4,
-    summary: 'Summary of The Fit Club',
+    summary:
+      'The FitClub Gym website is designed as a web application for managing gym memberships and workout schedules. It provides features for users to register, view classes, book sessions, and track fitness progress. The site is built using React for the frontend and utilizes CSS Modules for styling. It integrates with a backend API, which could be built using technologies like Node.js, Express, and MongoDB, to handle data storage and retrieval. The use of React allows for a dynamic and responsive user interface, while the backend API ensures efficient data management.',
     technologies: ['React', 'Chakra UI', 'Framer Motion', 'Javascript'],
+    demoLink: 'https://react-fitclub-gym.vercel.app/',
+    codeLink: 'https://github.com/JerryDoran/react-fitclub-gym',
   },
   // {
   //   slug: 'mobile-one',
@@ -174,10 +177,11 @@ export const projects = [
     image2: metaverse2,
     image3: metaverse3,
     image4: metaverse4,
-    summary: 'Summary of The Rosa',
-    technologies: ['', '', '', ''],
-    demoLink: '',
-    codeLink: '',
+    summary:
+      'The Rosa is a website template designed for restaurant or food-related businesses. It features a modern and responsive design, allowing the site to adapt to different devices and screen sizes. The template includes sections for showcasing menu items, customer testimonials, and contact information. It is built using HTML, CSS, and JavaScript, making it highly customizable and easy to deploy. The responsive design ensures a seamless browsing experience on various devices, while the use of HTML, CSS, and JavaScript provides flexibility for customization and interactive functionality.',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    demoLink: 'https://rosa-dining.netlify.app/',
+    codeLink: 'https://github.com/JerryDoran/rosa-responsive-site',
   },
   {
     slug: 'next-gen-banking',
@@ -190,10 +194,11 @@ export const projects = [
     image2: metaverse2,
     image3: metaverse3,
     image4: metaverse4,
-    summary: 'Summary of Next Generation Banking',
-    technologies: ['', '', '', ''],
-    demoLink: '',
-    codeLink: '',
+    summary:
+      'Next Gen Banking is a web application that simulates a banking system. The site is designed using the Next.js framework, which enables server-side rendering and provides a smooth user experience. It utilizes CSS Modules for modular and scoped styling. The application is intended to show off a modern design scheme that can be applied across many various business applications.',
+    technologies: ['Next JS', 'Tailwind CSS', 'Javascript'],
+    demoLink: 'https://next-hoobank.vercel.app/',
+    codeLink: 'https://github.com/JerryDoran/next-hoobank',
   },
   {
     slug: 'crypto-tracker',
@@ -206,10 +211,11 @@ export const projects = [
     image2: metaverse2,
     image3: metaverse3,
     image4: metaverse4,
-    summary: 'Summary of Fitness Tracker',
-    technologies: ['', '', '', ''],
-    demoLink: '',
-    codeLink: '',
+    summary:
+      'Crypto Tracker is a web application designed to track cryptocurrency prices and manage portfolios. The site is built using React, a JavaScript library for building user interfaces. It utilizes external APIs, such as CoinGecko, to fetch real-time data for various cryptocurrencies, including prices, market cap, and trading volume. Users can create accounts, add cryptocurrencies to their portfolios, and monitor their performance over time. The application employs React Router for handling routing and CSS Modules for modular and scoped styling. The combination of React, CoinGecko API, and supporting libraries enables an interactive and informative cryptocurrency tracking experience.',
+    technologies: ['React', 'CoinGecko API', 'CSS Modules', 'Javascript'],
+    demoLink: 'https://crytpotracker.netlify.app/',
+    codeLink: 'https://github.com/JerryDoran/crypto-tracker',
   },
   {
     slug: 'twitter-clone',
