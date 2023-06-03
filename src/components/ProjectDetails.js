@@ -37,7 +37,7 @@ export default function ProjectDetails({ projectId }) {
         initial='initial'
         animate='animate'
       >
-        <div className='w-full col-span-6 transition duration-200 overflow-hidden'>
+        <div className='w-full col-span-6 transition duration-200 overflow-hidden rounded-lg'>
           <FramerImage
             src={project?.image1}
             alt='project image'
@@ -50,7 +50,7 @@ export default function ProjectDetails({ projectId }) {
             sizes='100vw'
           />
         </div>
-        <div className='hidden md:block w-full col-span-2 transition duration-200 overflow-hidden'>
+        <div className='hidden md:block w-full col-span-2 transition duration-200 overflow-hidden rounded-lg'>
           <FramerImage
             src={project?.image2}
             alt='project image'
@@ -64,7 +64,7 @@ export default function ProjectDetails({ projectId }) {
           />
         </div>
 
-        <div className='hidden md:block w-full col-span-2 transition duration-200 overflow-hidden'>
+        <div className='hidden md:block w-full col-span-2 transition duration-200 overflow-hidden rounded-lg'>
           <FramerImage
             src={project?.image3}
             alt='project image'
@@ -78,7 +78,7 @@ export default function ProjectDetails({ projectId }) {
           />
         </div>
 
-        <div className='hidden md:block w-full col-span-2 transition duration-200 overflow-hidden'>
+        <div className='hidden md:block w-full col-span-2 transition duration-200 overflow-hidden rounded-lg'>
           <FramerImage
             src={project?.image4}
             alt='project image'

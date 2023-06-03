@@ -27,6 +27,14 @@ import apple1 from '../../public/images/projects/ecommerce-apple-app.png';
 import apple2 from '../../public/images/projects/apple-2.png';
 import apple3 from '../../public/images/projects/apple-3.png';
 import apple4 from '../../public/images/projects/apple-4.png';
+import entertainment1 from '../../public/images/projects/entertainment-1.png';
+import entertainment2 from '../../public/images/projects/entertainment-2.png';
+import entertainment3 from '../../public/images/projects/entertainment-3.png';
+import entertainment4 from '../../public/images/projects/entertainment-4.png';
+import realty1 from '../../public/images/projects/realty-1.png';
+import realty2 from '../../public/images/projects/realty-2.png';
+import realty3 from '../../public/images/projects/realty-3.png';
+import realty4 from '../../public/images/projects/realty-4.png';
 
 export const projects = [
   {
@@ -82,10 +90,10 @@ export const projects = [
     title: 'Entertainment Hub',
     description:
       'Explore and browse your favorite movies and television shows in all in one place.',
-    image1: metaverse1,
-    image2: metaverse2,
-    image3: metaverse3,
-    image4: metaverse4,
+    image1: entertainment1,
+    image2: entertainment2,
+    image3: entertainment3,
+    image4: entertainment4,
     summary:
       'Entertainment DB is a web application that serves as a database for various entertainment media such as movies and TV shows. It provides a platform for users to explore, search, and discover information about their favorite entertainment titles. The application is built using React and leverages a backend API to fetch and manage the media data.',
     technologies: ['React', 'Material UI', 'Movie DB API'],
@@ -94,15 +102,15 @@ export const projects = [
   },
   {
     slug: 'next-properties',
-    img: business4,
+    img: realty2,
     category: 'business',
     title: 'Next Gen Realty',
     description:
       'Explore and browse your favorite properties and locations in all in one place.',
-    image1: metaverse1,
-    image2: metaverse2,
-    image3: metaverse3,
-    image4: metaverse4,
+    image1: realty2,
+    image2: realty1,
+    image3: realty3,
+    image4: realty4,
     summary:
       "This is a realestate design site that showcases some of the features of a realty application.  Functionality for real estate property search can be added upon request to this application.  View detailed information about each property, including images, description, price, and contact information.  Save functionality can be implemented upon request to save favorite listings by clicking the 'Save' button, allowing you to revisit them later.  Customization of your search preferences and filter results based on various criteria can also be added to this application upon request.",
     technologies: ['NextJS', 'Chakra UI', 'React', 'Javascript'],
