@@ -101,7 +101,7 @@ export default function ProjectDetails({ projectId }) {
       <div className='mt-10'>
         <div className='p-2 grid md:grid-cols-5 gap-6 py-6'>
           <div className='col-span-4'>
-            <p className='text-violet-600 text-2xl tracking-wider mb-3 text-semibold'>
+            <p className='text-violet-600 text-2xl tracking-wider mb-3 font-bold'>
               Project
             </p>
             <h2 className='text-3xl mb-3'>Overview</h2>
@@ -127,7 +127,7 @@ export default function ProjectDetails({ projectId }) {
               </Link>
             </div>
           </div>
-          <div className='col-span-4 md:col-span-1 shadow-lg dark:shadow-neutral-700 dark:border-neutral-700 rounded-xl border-2 p-4'>
+          <div className='col-span-4 md:col-span-1 bg-white shadow-lg dark:shadow-neutral-700 dark:border-neutral-700 dark:bg-transparent rounded-xl border-2 p-4'>
             <div className='p-2'>
               <p className='text-center font-bold pb-2'>Built With</p>
               {project?.technologies?.map((tech) => (

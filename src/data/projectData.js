@@ -35,6 +35,26 @@ import realty1 from '../../public/images/projects/realty-1.png';
 import realty2 from '../../public/images/projects/realty-2.png';
 import realty3 from '../../public/images/projects/realty-3.png';
 import realty4 from '../../public/images/projects/realty-4.png';
+import rosa1 from '../../public/images/projects/rosa-1.png';
+import rosa2 from '../../public/images/projects/rosa-2.png';
+import rosa3 from '../../public/images/projects/rosa-3.png';
+import rosa4 from '../../public/images/projects/rosa-4.png';
+import crypto1 from '../../public/images/projects/crypto-1.png';
+import crypto2 from '../../public/images/projects/crypto-2.png';
+import crypto3 from '../../public/images/projects/crypto-3.png';
+import crypto4 from '../../public/images/projects/crypto-4.png';
+import bank1 from '../../public/images/projects/bank-1.png';
+import bank2 from '../../public/images/projects/bank-2.png';
+import bank3 from '../../public/images/projects/bank-3.png';
+import bank4 from '../../public/images/projects/bank-4.png';
+import twitter1 from '../../public/images/projects/twitter-1.png';
+import twitter2 from '../../public/images/projects/twitter-2.png';
+import twitter3 from '../../public/images/projects/twitter-3.png';
+import twitter4 from '../../public/images/projects/twitter-4.png';
+import beach1 from '../../public/images/projects/beach-1.png';
+import beach2 from '../../public/images/projects/beach-2.png';
+import beach3 from '../../public/images/projects/beach-3.png';
+import beach4 from '../../public/images/projects/beach-4.png';
 
 export const projects = [
   {
@@ -181,10 +201,10 @@ export const projects = [
     title: 'The Rosa Restaurant',
     description:
       'Enjoy fun times and delicious authentic food in a wonderful family environment.',
-    image1: metaverse1,
-    image2: metaverse2,
-    image3: metaverse3,
-    image4: metaverse4,
+    image1: rosa1,
+    image2: rosa2,
+    image3: rosa3,
+    image4: rosa4,
     summary:
       'The Rosa is a website template designed for restaurant or food-related businesses. It features a modern and responsive design, allowing the site to adapt to different devices and screen sizes. The template includes sections for showcasing menu items, customer testimonials, and contact information. It is built using HTML, CSS, and JavaScript, making it highly customizable and easy to deploy. The responsive design ensures a seamless browsing experience on various devices, while the use of HTML, CSS, and JavaScript provides flexibility for customization and interactive functionality.',
     technologies: ['HTML', 'CSS', 'Javascript'],
@@ -198,10 +218,10 @@ export const projects = [
     title: 'Next Gen Banking',
     description:
       'Next generation banking is here in this easy to use new banking site of the future.',
-    image1: metaverse1,
-    image2: metaverse2,
-    image3: metaverse3,
-    image4: metaverse4,
+    image1: bank1,
+    image2: bank2,
+    image3: bank3,
+    image4: bank4,
     summary:
       'Next Gen Banking is a web application that simulates a banking system. The site is designed using the Next.js framework, which enables server-side rendering and provides a smooth user experience. It utilizes CSS Modules for modular and scoped styling. The application is intended to show off a modern design scheme that can be applied across many various business applications.',
     technologies: ['Next JS', 'Tailwind CSS', 'Javascript'],
@@ -215,10 +235,10 @@ export const projects = [
     title: 'Crypto Tracker',
     description:
       'Track your favorite crypto currencies and save them to your user profile.',
-    image1: metaverse1,
-    image2: metaverse2,
-    image3: metaverse3,
-    image4: metaverse4,
+    image1: crypto1,
+    image2: crypto2,
+    image3: crypto3,
+    image4: crypto4,
     summary:
       'Crypto Tracker is a web application designed to track cryptocurrency prices and manage portfolios. The site is built using React, a JavaScript library for building user interfaces. It utilizes external APIs, such as CoinGecko, to fetch real-time data for various cryptocurrencies, including prices, market cap, and trading volume. Users can create accounts, add cryptocurrencies to their portfolios, and monitor their performance over time. The application employs React Router for handling routing and CSS Modules for modular and scoped styling. The combination of React, CoinGecko API, and supporting libraries enables an interactive and informative cryptocurrency tracking experience.',
     technologies: ['React', 'CoinGecko API', 'CSS Modules', 'Javascript'],
@@ -232,10 +252,10 @@ export const projects = [
     title: 'Twitter Clone',
     description:
       'A clone of a popular social media app that exhibits attention to detail and design.',
-    image1: metaverse1,
-    image2: metaverse2,
-    image3: metaverse3,
-    image4: metaverse4,
+    image1: twitter1,
+    image2: twitter2,
+    image3: twitter3,
+    image4: twitter4,
     summary:
       "The Firebase Twitter Clone is a web application that replicates the functionality of Twitter using Firebase as the backend. Users can create tweets, follow others, view profiles, and search for tweets. Authentication is handled by Firebase Authentication, while Firebase Firestore stores and synchronizes tweet data. The clone allows users to engage in real-time social media interactions while leveraging Firebase's powerful features. With a seamless integration of Firebase services, the project provides an efficient and scalable solution for building a Twitter-like application.",
     technologies: [
@@ -247,6 +267,23 @@ export const projects = [
     ],
     demoLink: 'https://next-twitter-clone-tau.vercel.app/',
     codeLink: 'https://github.com/JerryDoran/next-twitter-clone',
+  },
+  {
+    slug: 'beach-resort',
+    img: beach1,
+    category: 'design',
+    title: 'Beach Resort',
+    description:
+      'A popular beach resort design app that showcases beautiful rooms while staying at the beach.',
+    image1: beach1,
+    image2: beach2,
+    image3: beach3,
+    image4: beach4,
+    summary:
+      'This website template designed for tourist or travel-related businesses. It features a modern and responsive design, allowing the site to adapt to different devices and screen sizes. The template includes sections for showcasing rooms, exploring features, and search capability for selecting the room for you budget and requirements. It is built using React, making it highly customizable and easy to deploy. The responsive design ensures a seamless browsing experience on various devices, while the use of the React library provides flexibility for customization and interactive functionality.',
+    technologies: ['React', 'CSS Modules', 'Javascript'],
+    demoLink: 'https://react-beach-resourt.netlify.app/',
+    codeLink: 'https://github.com/JerryDoran/react_beach_resort',
   },
   // {
   //   slug: 'admin-dashboard-one',
