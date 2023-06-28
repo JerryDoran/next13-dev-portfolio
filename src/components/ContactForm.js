@@ -45,7 +45,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className='p-8 max-w-4xl mx-auto'>
+    <div className=' max-w-4xl mx-auto'>
       <motion.div
         className='flex flex-col lg:flex-row border dark:border-2 dark:border-neutral-800 border-neutral-300 rounded-lg text-white shadow-xl dark:shadow-neutral-600'
         initial={{ opacity: 0, scale: 0 }}
@@ -62,7 +62,7 @@ export default function ContactForm() {
         />
         <form
           ref={form}
-          className='w-full p-[40px] bg-transparent dark:text-white/50 text-gray-500'
+          className='w-full sm:p-[40px] py-8 px-2 bg-transparent dark:text-white/50 text-gray-500'
           onSubmit={sendEmail}
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}

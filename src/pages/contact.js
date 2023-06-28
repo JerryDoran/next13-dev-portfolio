@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Doran Software | About Page</title>
+        <title>Doran Software | Contact Page</title>
         <meta name='description' content='Jerry Doran software engineer' />
       </Head>
       <main className='flex w-full h-auto flex-col items-center justify-center'>
