@@ -63,67 +63,6 @@ export default function ProjectsPage() {
               </motion.div>
             </div>
           </section>
-
-          {/* <div className='grid grid-cols-12 gap-24'>
-            <div className='col-span-12'>
-              <FeaturedProject
-                title='Crypto Screener Application'
-                link='/'
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                        local currency.'
-                type='Featured Project'
-                githubLink='/'
-                img={project1}
-              />
-            </div>
-            <div className='col-span-6'>
-              <Project
-                title='Crypto Screener Application'
-                link='/'
-                type='Featured Project'
-                githubLink='/'
-                img={project1}
-              />
-            </div>
-            <div className='col-span-6'>
-              <Project
-                title='Crypto Screener Application'
-                link='/'
-                type='Featured Project'
-                githubLink='/'
-                img={project1}
-              />
-            </div>
-            <div className='col-span-12'>
-              <FeaturedProject
-                title='React Portfolio Website'
-                link='/'
-                summary='A professional portfolio website using React JS, Framer-motion, and styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive.'
-                type='Featured Project'
-                githubLink='/'
-                img={project2}
-              />
-            </div>
-            <div className='col-span-6'>
-              <Project
-                title='Crypto Screener Application'
-                link='/'
-                type='Featured Project'
-                githubLink='/'
-                img={project1}
-              />
-            </div>
-            <div className='col-span-6'>
-              <Project
-                title='Crypto Screener Application'
-                link='/'
-                type='Featured Project'
-                githubLink='/'
-                img={project1}
-              />
-            </div>
-          </div> */}
         </Layout>
       </main>
     </>

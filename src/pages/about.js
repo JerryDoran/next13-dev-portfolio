@@ -43,7 +43,7 @@ export default function AboutPage() {
       <main className='flex w-full h-auto flex-col items-center justify-center'>
         <Layout className='pt-16'>
           <AnimatedText
-            text='Passion Fuels Purpose!'
+            text='Purpose Fuels Passion!'
             className='sm:mb-16 mb-8 !text-4xl sm:!text-6xl'
           />
           <div className='grid w-full grid-cols-8 sm:gap-16 gap-8'>

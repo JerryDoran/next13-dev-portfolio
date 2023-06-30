@@ -98,10 +98,10 @@ export default function ProjectDetails({ projectId }) {
           </h2>
         </div>
       </motion.div>
-      <div className='mt-10'>
+      <div className='mt-5'>
         <div className='p-2 grid md:grid-cols-5 gap-6 py-6'>
           <div className='col-span-4'>
-            <p className='text-violet-600 text-2xl tracking-wider mb-3 font-bold'>
+            <p className='text-violet-500 text-lg tracking-wider mb-3 '>
               Project
             </p>
             <h2 className='text-3xl mb-3'>Overview</h2>
