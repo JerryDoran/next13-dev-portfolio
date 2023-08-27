@@ -85,10 +85,10 @@ export default function HomePage() {
                 className='flex items-center lg:self-start mt-4 space-x-8 self-center'
               >
                 <Link
-                  href='/dummy.pdf'
+                  href='/dev_resume.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
-                  download={true}
+                  // download={true}
                   className='flex items-center gap-2 bg-violet-900 text-light p-2.5 text-base md:px-6 rounded-lg md:text-lg font-semibold tracking-wide transition duration-200 hover:bg-violet-800'
                 >
                   Resume
