@@ -2,11 +2,10 @@ import Layout from '@/components/Layout';
 import AnimatedText from '@/components/global/AnimatedText';
 import Head from 'next/head';
 import Image from 'next/image';
-import about from '../../public/images/about.jpg';
+import about from '../../public/images/profile/jerryportfolio1-rmbg.png';
 import { useEffect, useRef } from 'react';
-import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
+import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
-import Experience from '@/components/Experience';
 import Services from '@/components/Services';
 
 function AnimatedNumbers({ value }) {
@@ -69,7 +68,7 @@ export default function AboutPage() {
                 your next project.
               </p>
             </div>
-            <div className='xl:col-span-3 md:col-span-4 col-span-8 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-white p-6 dark:bg-light/80 dark:border-transparent order-1 lg:order-none'>
+            <div className='xl:col-span-3 md:col-span-4 col-span-8 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-white p-6 dark:bg-black dark:border-neutral-700 order-1 lg:order-none'>
               {/* <div className='absolute top-[1px] -right-2.5 -z-10 w-[101%] h-[102%] rounded-[1.2rem] bg-dark' /> */}
               <Image
                 src={about}

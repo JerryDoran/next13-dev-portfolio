@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import profilePic from '../../public/images/profile/developer-pic-1.png';
+import profilePic from '../../public/images/profile/jerryportfolio3-rmbg.png';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import AnimatedText from '@/components/global/AnimatedText';
 import { motion } from 'framer-motion';
@@ -58,20 +58,20 @@ export default function HomePage() {
                 alt='doran software'
                 className='w-full h-auto md:inline-block'
                 priority
-                sizes='(max-width: 768px) 100vw,
+                sizes='(max-width: 768px) 50vw,
                       (max-width: 1200px) 50vw, 50vw'
               />
             </div>
             <div className='lg:w-1/2 w-full xl:w-3/4 text-center lg:text-left flex flex-col items-center self-center'>
               <AnimatedText
-                className='!text-2xl sm:!text-4xl md:!text-5xl lg:!text-5xl !text-center lg:!text-left xl:!text-6xl mb-4 tracking-wide'
+                className='!text-2xl sm:!text-4xl md:!text-5xl lg:!text-5xl !text-center lg:!text-left xl:!text-6xl mb-4 mt-5 tracking-wide'
                 text='Turning Vision Into Reality With Code And Design.'
               />
               <motion.p
                 variants={paragraphVariant}
                 initial='initial'
                 animate='animate'
-                className='leading-6 mb-4 text-sm md:text-base'
+                className='leading-6 my-4 text-sm md:text-base'
               >
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
