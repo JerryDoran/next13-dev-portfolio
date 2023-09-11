@@ -68,12 +68,12 @@ export default function AboutPage() {
                 your next project.
               </p>
             </div>
-            <div className='xl:col-span-3 md:col-span-4 col-span-8 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-white p-6 dark:bg-black dark:border-neutral-700 order-1 lg:order-none'>
+            <div className='xl:col-span-3 md:col-span-4 col-span-8 relative h-max rounded-2xl border-2 border-solid border-neutral-300 shadow-xl bg-white p-4 dark:bg-neutral-300 dark:border-neutral-700 order-1 lg:order-none flex items-center justify-center'>
               {/* <div className='absolute top-[1px] -right-2.5 -z-10 w-[101%] h-[102%] rounded-[1.2rem] bg-dark' /> */}
               <Image
                 src={about}
                 alt='doran software'
-                className='w-full h-auto rounded-2xl'
+                className='w-full h-[600px] object-cover rounded-2xl bg-black'
                 priority
                 sizes='(max-width: 768px) 100vw,
                       (max-width: 1200px) 50vw, 33vw'

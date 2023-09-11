@@ -50,21 +50,21 @@ export default function HomePage() {
         />
       </Head>
       <main className='relative flex items-center text-dark w-full min-h-screen dark:text-light'>
-        <Layout className='pt-0 -mt-10 sm:mt-0 lg:-mt-20'>
-          <div className='flex items-center justify-between w-full flex-col lg:flex-row'>
-            <div className='md:w-1/2 w-full'>
+        <Layout className='pt-0 -mt-10 sm:-mt-14 lg:-mt-40'>
+          <div className='flex items-center justify-between w-full flex-col lg:flex-row gap-6'>
+            <div className='md:w-1/2 w-3/4'>
               <Image
                 src={profilePic}
                 alt='doran software'
-                className='w-full h-auto md:inline-block'
+                className='w-full h-auto md:inline-block -mt-10'
                 priority
-                sizes='(max-width: 768px) 50vw,
+                sizes='(max-width: 768px) 100vw,
                       (max-width: 1200px) 50vw, 50vw'
               />
             </div>
             <div className='lg:w-1/2 w-full xl:w-3/4 text-center lg:text-left flex flex-col items-center self-center'>
               <AnimatedText
-                className='!text-2xl sm:!text-4xl md:!text-5xl lg:!text-5xl !text-center lg:!text-left xl:!text-6xl mb-4 mt-5 tracking-wide'
+                className='!text-2xl sm:!text-4xl md:!text-5xl lg:!text-5xl !text-center lg:!text-left xl:!text-6xl mb-4 tracking-wide'
                 text='Turning Vision Into Reality With Code And Design.'
               />
               <motion.p
