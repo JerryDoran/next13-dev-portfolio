@@ -122,11 +122,11 @@ export default function Navbar() {
       <button
         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
         className={`flex items-center justify-center rounded-full p-1  ${
-          mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark '
+          mode === 'light' ? 'bg-dark text-light' : 'bg-gray-700 text-dark '
         }`}
       >
         {mode === 'dark' ? (
-          <BsSunFill className='fill-dark' />
+          <BsSunFill className='fill-sun' />
         ) : (
           <BsMoonStarsFill className='fill-light' />
         )}
